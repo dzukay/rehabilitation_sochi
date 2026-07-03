@@ -201,3 +201,25 @@ section { padding: 96px 0; }
 .cta-sub { max-width: 520px; margin: 16px auto 32px; color: var(--muted); }
 .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .cta-btns .btn { font-size: 1.1rem; padding: 15px 26px; }
+
+/* ============================================================
+   Адаптив
+   ============================================================ */
+@media (max-width: 1024px) {
+  .how-grid { grid-template-columns: repeat(2, 1fr); }
+  .timing-grid, .prog-grid { grid-template-columns: 1fr 1fr; }
+  .stat-block { grid-template-columns: 1fr; }
+  .stat-img { max-height: 420px; }
+}
+
+@media (max-width: 720px) {
+  section { padding: 64px 0; }
+  .nav-links { display: none; }           /* на мобильном: бренд + кнопка «Позвонить» */
+  .how-grid, .timing-grid, .prog-grid { grid-template-columns: 1fr; }
+  .hero { padding: 150px 0 56px; }
+  .hero-art { width: 1100px; }
+  .stat-text { padding: 36px 24px; }
+  .doctor-chip { flex-direction: column; text-align: center; }
+  .footer-row { flex-direction: column; text-align: center; }
+  .aphasia-grid { grid-template-columns: 1fr; }
+}
