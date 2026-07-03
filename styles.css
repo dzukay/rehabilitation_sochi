@@ -108,3 +108,46 @@ section { padding: 96px 0; }
   align-items: center; justify-content: center;
   box-shadow: 0 8px 24px rgba(32, 32, 32, .28);
 }
+
+/* ---------- Светлая секция ---------- */
+.soft-section { background: var(--paper-soft); }
+
+/* ---------- Карточка врача (герой) ---------- */
+.doctor-chip { display: inline-flex; align-items: center; gap: 14px; padding: 14px 22px; margin-top: 28px; text-align: left; }
+.doctor-ava {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #F0876A, #D96A8B);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; flex: none;
+}
+.doctor-chip-name { font-size: 1.05rem; }
+.doctor-chip-meta { font-size: .875rem; color: var(--muted); margin-top: 2px; }
+
+/* ---------- Как проходит ---------- */
+.how-wrap {
+  background: var(--card); border-radius: var(--r-wrap); padding: 28px;
+  background-image: radial-gradient(ellipse 600px 400px at 85% 20%, rgba(240, 135, 106, .18), transparent 70%);
+}
+.how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.how-card { padding: 26px 22px; }
+.how-card h3 { font-size: 1.4rem; margin-bottom: 12px; }
+.how-card p { font-size: .95rem; color: var(--muted); }
+
+/* ---------- Когда начинать ---------- */
+.timing-intro { max-width: 640px; margin-bottom: 40px; color: var(--muted); }
+.timing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.timing-card { border-radius: var(--r-card); padding: 30px 26px; }
+.timing-phase { font-size: .875rem; color: var(--muted); margin-bottom: 10px; }
+.timing-card h3 { font-size: 1.5rem; margin-bottom: 14px; }
+.timing-card p:last-child { font-size: .95rem; }
+
+/* ---------- Блок-цифра ---------- */
+.stat-block {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border-radius: var(--r-wrap); overflow: hidden;
+  background: var(--paper-soft); align-items: center;
+}
+.stat-text { padding: 60px; }
+.stat-huge { font-size: clamp(4rem, 10vw, 6.5rem); line-height: 1; }
+.stat-sub { margin-top: 18px; font-size: 1.15rem; max-width: 380px; }
+.stat-img { width: 100%; height: 100%; object-fit: cover; }
