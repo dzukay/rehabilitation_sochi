@@ -163,26 +163,42 @@ section { padding: 80px 0; }
 .slider-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 64px; }
 .slider-head h2 { margin-bottom: 0; }
 .slider-arrows { display: flex; gap: 10px; }
+/* стрелки как в оригинале: левая светлая с серой иконкой, правая — чёрная заливка */
 .slider-arrow {
   width: 48px; height: 48px; border-radius: var(--r-btn);
-  border: 1px solid var(--ink); background: transparent; color: var(--ink);
+  border: 1px solid rgba(32, 32, 32, .18); background: #fff; color: #7c7c7c;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; transition: all .3s; font-family: var(--font);
 }
-.slider-arrow:hover { background: var(--ink); color: #fff; }
-.slider-arrow:disabled { opacity: .3; cursor: default; }
-.slider-arrow:disabled:hover { background: transparent; color: var(--ink); }
+.slider-arrow:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+.slider-arrow-dark { background: var(--ink); border-color: var(--ink); color: #fff; }
+.slider-arrow-dark:hover { background: var(--accent); border-color: var(--accent); }
+.slider-arrow:disabled { opacity: .35; cursor: default; }
+.slider-arrow:disabled:hover { background: #fff; border-color: rgba(32, 32, 32, .18); color: #7c7c7c; }
+.slider-arrow-dark:disabled:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
 .slider { overflow: hidden; border-radius: var(--r-wrap); }
 .slider-track { display: flex; transition: transform .5s cubic-bezier(.4, 0, .2, 1); }
 .how-slide {
   flex: 0 0 100%;
   display: grid; grid-template-columns: 45% 55%;
   background: #fff; border-radius: var(--r-wrap); overflow: hidden;
-  min-height: 437px;
+  min-height: 560px;
 }
-.how-slide-text { padding: 60px; display: flex; flex-direction: column; justify-content: center; }
-.how-slide-text h3 { font-size: clamp(1.6rem, 2.6vw, 2.38rem); line-height: 1.1; margin-bottom: 20px; }
-.how-slide-text p { font-size: 1.06rem; color: var(--muted); max-width: 440px; }
+/* текст прижат к верху, кнопка — к низу, как в оригинале */
+.how-slide-text {
+  padding: 70px 60px 60px;
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.how-slide-text h3 { font-size: clamp(1.6rem, 2.6vw, 2.38rem); line-height: 1.1; margin-bottom: 24px; }
+.how-slide-text p { font-size: 1.06rem; color: var(--muted); max-width: 440px; flex: 1; }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-top: 32px;
+  padding: 12px 20px; border-radius: var(--r-btn);
+  border: 1px solid var(--ink); background: transparent; color: var(--ink);
+  font-size: 1rem; transition: all .3s;
+}
+.btn-outline:hover { background: var(--ink); color: #fff; }
 .how-slide-img { width: 100%; height: 100%; object-fit: cover; min-height: 300px; }
 
 /* ---------- Когда начинать ---------- */
