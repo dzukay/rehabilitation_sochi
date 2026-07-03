@@ -37,16 +37,12 @@
 
     <!-- ===== ГЕРОЙ ===== -->
     <section class="hero" aria-labelledby="hero-heading">
-      <img class="hero-art" src="assets/hero.webp" alt="" aria-hidden="true" />
+      <picture>
+        <source media="(max-width: 720px)" srcset="assets/hero-mob.webp" />
+        <img class="hero-art" src="assets/hero.webp" alt="" aria-hidden="true" />
+      </picture>
       <div class="container">
         <div class="hero-inner">
-          <div class="hero-badge" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
-            Частный врач · г. Сочи
-          </div>
           <h1 id="hero-heading">Реабилитация<br />после инсульта в Сочи</h1>
           <p class="hero-sub">
             Ранняя профессиональная реабилитация — это возможность вернуть двигательные функции, предотвратить
@@ -189,7 +185,7 @@
         <h2 id="prognosis-heading" class="section-title">Возможности восстановления в зависимости от тяжести инсульта
         </h2>
         <div class="prog-grid reveal">
-          <article class="prog-card wash-green">
+          <article class="prog-card" style="background-image:url(assets/symp06.webp)">
             <p class="prog-badge">Лёгкий инсульт</p>
             <h3>Высокий потенциал восстановления</h3>
             <ul>
@@ -199,7 +195,7 @@
             </ul>
             <p class="prog-term">Срок реабилитации: <strong>от 1 до 4 недель</strong></p>
           </article>
-          <article class="prog-card wash-amber">
+          <article class="prog-card" style="background-image:url(assets/symp05.webp)">
             <p class="prog-badge">Средне-тяжёлый</p>
             <h3>Специализированное обучение</h3>
             <ul>
@@ -209,7 +205,7 @@
             </ul>
             <p class="prog-term">Срок реабилитации: <strong>от 1 до 3 месяцев</strong></p>
           </article>
-          <article class="prog-card wash-rose">
+          <article class="prog-card" style="background-image:url(assets/symp04.webp)">
             <p class="prog-badge">Тяжёлый инсульт</p>
             <h3>Интенсивное сопровождение</h3>
             <ul>
@@ -338,6 +334,7 @@
     <section class="cta-section" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta-card reveal">
+          <img class="cta-wave" src="assets/wave.svg" alt="" aria-hidden="true" />
           <h2 id="cta-heading" style="margin-bottom:0">Не теряйте время — позвоните сейчас</h2>
           <p class="cta-sub">
             Врач-реабилитолог Тимофеев Николай Устинович проведёт консультацию и составит индивидуальный план
@@ -349,7 +346,7 @@
           </div>
         </div>
       </div>
-      <img class="cta-bottom-art" src="assets/hero.webp" alt="" aria-hidden="true" />
+      <img class="cta-bottom-art" src="assets/bottom.webp" alt="" aria-hidden="true" />
     </section>
 
   </main>
