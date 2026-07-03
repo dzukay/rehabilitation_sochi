@@ -176,7 +176,7 @@ section { padding: 80px 0; }
 .slider-arrow:disabled { opacity: .35; cursor: default; }
 .slider-arrow:disabled:hover { background: #fff; border-color: rgba(32, 32, 32, .18); color: #7c7c7c; }
 .slider-arrow-dark:disabled:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
-.slider { overflow: hidden; border-radius: var(--r-wrap); }
+.slider { overflow: hidden; border-radius: var(--r-wrap); box-shadow: var(--shadow-soft); }
 .slider-track { display: flex; transition: transform .5s cubic-bezier(.4, 0, .2, 1); }
 .how-slide {
   flex: 0 0 100%;
