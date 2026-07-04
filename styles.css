@@ -73,8 +73,6 @@ section { padding: 80px 0; }
 .wash-grey  { background: var(--card); }
 
 /* ---------- Заголовки секций ---------- */
-.section-num { font-size: clamp(4.5rem, 7.2vw, 6.5rem); line-height: 1.09; }
-.num-row { text-align: right; }
 .section-eyebrow { font-size: .875rem; color: var(--muted); margin-bottom: 12px; }
 
 /* ---------- Появление при скролле ---------- */
@@ -238,7 +236,6 @@ section { padding: 80px 0; }
 
 /* ---------- Осложнения: номер слева + аккордеон справа ---------- */
 .comp-layout { display: grid; grid-template-columns: 1fr minmax(0, 680px); gap: 40px; align-items: start; }
-.comp-left .section-num { display: block; margin-bottom: 24px; }
 .comp-intro { max-width: 420px; color: var(--muted); }
 .comp-intro strong { color: var(--ink); }
 .acc { display: grid; gap: 12px; }
@@ -315,7 +312,6 @@ section { padding: 80px 0; }
   .stat-block { grid-template-columns: 1fr; min-height: 0; }
   .stat-img { min-height: 380px; max-height: 480px; }
   .comp-layout { grid-template-columns: 1fr; }
-  .comp-left .section-num { text-align: right; }
   .comp-intro { max-width: 640px; }
   .how-slide { grid-template-columns: 1fr; }
   .how-slide-text { padding: 40px 30px; }
