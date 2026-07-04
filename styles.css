@@ -66,10 +66,11 @@ section { padding: 80px 0; }
 }
 .card { background: var(--card); border-radius: var(--r-card); }
 
-/* ---------- Пастельные заливки ---------- */
-.wash-green { background: linear-gradient(155deg, #f3f7ee 0%, #e3efdc 55%, #d3e6c8 100%); }
-.wash-amber { background: linear-gradient(155deg, #faf3e8 0%, #f6e8d2 55%, #f0dcbb 100%); }
-.wash-rose  { background: linear-gradient(155deg, #faeff0 0%, #f6dee2 55%, #f0ccd4 100%); }
+/* ---------- Плоские пастельные заливки (палитра symp-карточек ДС) ---------- */
+.wash-green { background: #ecf3e3; }
+.wash-amber { background: #f8eedf; }
+.wash-rose  { background: #f9e7ed; }
+.wash-grey  { background: var(--card); }
 
 /* ---------- Заголовки секций ---------- */
 .section-num { font-size: clamp(4.5rem, 7.2vw, 6.5rem); line-height: 1.09; }
@@ -224,17 +225,12 @@ section { padding: 80px 0; }
 .prog-card {
   border-radius: var(--r-card); padding: 30px;
   display: flex; flex-direction: column;
-  background-size: cover; background-position: center;
-  min-height: 420px;
+  min-height: 360px;
 }
-.prog-badge {
-  display: inline-block; align-self: flex-start;
-  font-size: .8rem; background: rgba(255, 255, 255, .7);
-  border-radius: 999px; padding: 6px 14px; margin-bottom: 18px;
-}
+.prog-badge { font-size: .875rem; color: var(--muted); margin-bottom: 14px; }
 .prog-card h3 { font-size: 1.5rem; margin-bottom: 18px; }
 .prog-card ul { list-style: none; display: grid; gap: 12px; font-size: .95rem; flex: 1; align-content: start; }
-.prog-term { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(32, 32, 32, .1); font-size: .95rem; }
+.prog-term { margin-top: 28px; font-size: .95rem; }
 .prog-note { margin-top: 32px; text-align: center; font-size: .9rem; color: var(--muted); }
 
 /* ---------- Осложнения: номер слева + аккордеон справа ---------- */
