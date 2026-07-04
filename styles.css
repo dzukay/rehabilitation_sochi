@@ -203,10 +203,13 @@ section { padding: 80px 0; }
 .soft-section { background: transparent; }
 .timing-intro { max-width: 640px; margin: -34px 0 48px; color: var(--muted); }
 .timing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.timing-card { border-radius: var(--r-card); padding: 30px; }
+.timing-card { border-radius: var(--r-card); padding: 30px; display: flex; flex-direction: column; }
 .timing-phase { font-size: .875rem; color: var(--muted); margin-bottom: 12px; }
 .timing-card h3 { font-size: 1.5rem; margin-bottom: 16px; }
-.timing-card p:last-child { font-size: .95rem; }
+.timing-card p { font-size: .95rem; }
+
+/* кривая-спарклайн внизу карточки (как в блог-карточках ДС) */
+.card-curve { width: 144px; height: auto; margin-top: auto; padding-top: 28px; }
 
 /* ---------- Блок-цифра: full-width, текст + молекула ---------- */
 .stat-block {
